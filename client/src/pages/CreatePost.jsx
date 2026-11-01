@@ -20,7 +20,7 @@ const CreatePost = () => {
                 throw new Error('Please log in before creating a post.')
             }
 
-            const response = await fetch('http://localhost:5000/api/posts', {
+            const response = await fetch('https://mern-blog-api-iace.onrender.com/api/posts', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',

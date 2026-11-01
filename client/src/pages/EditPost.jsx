@@ -20,7 +20,7 @@ const EditPost = () => {
         const fetchPost = async () => {
             try {
                 const response = await fetch(
-                    `http://localhost:5000/api/posts/${id}`
+                    `https://mern-blog-api-iace.onrender.com/api/posts/${id}`
                 )
 
                 const data = await response.json()
@@ -55,7 +55,7 @@ const EditPost = () => {
             }
 
             const response = await fetch(
-                `http://localhost:5000/api/posts/${id}`,
+                `https://mern-blog-api-iace.onrender.com/api/posts/${id}`,
                 {
                     method: 'PUT',
                     headers: {
