@@ -1,0 +1,120 @@
+.authors__hero {
+    background: var(--color-primary);
+    padding: 6rem 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.authors__hero::after {
+    content: '';
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    border: 1px solid rgba(183, 149, 86, 0.2);
+    border-radius: 50%;
+    right: -100px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.authors__eyebrow {
+    display: inline-block;
+    color: var(--color-gold);
+    font-family: Arial, sans-serif;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 1.5rem;
+}
+
+.authors__hero h1 {
+    color: var(--color-white);
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    margin-bottom: 1.2rem;
+}
+
+.authors__hero h1 span {
+    color: var(--color-gold);
+}
+
+.authors__hero p {
+    max-width: 580px;
+    color: #D0D5DC;
+    font-family: Arial, sans-serif;
+    font-size: 1rem;
+    line-height: 1.9;
+}
+
+.authors__heading {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.authors__heading > span {
+    color: var(--color-gold-dark);
+    font-family: Arial, sans-serif;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.authors__heading h2 {
+    font-size: 2.2rem;
+    margin: 0.8rem 0;
+}
+
+.authors__heading p {
+    color: var(--color-gray);
+    font-family: Arial, sans-serif;
+}
+
+.authors__empty {
+    max-width: 650px;
+    margin: 0 auto;
+    padding: 3.5rem 2rem;
+    background: var(--color-white);
+    border: 1px solid var(--color-border);
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: var(--shadow);
+}
+
+.authors__empty-icon {
+    width: 65px;
+    height: 65px;
+    display: grid;
+    place-items: center;
+    margin: 0 auto 1.5rem;
+    background: var(--color-ivory);
+    color: var(--color-gold-dark);
+    font-size: 1.8rem;
+    border-radius: 50%;
+}
+
+.authors__empty h3 {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+}
+
+.authors__empty p {
+    max-width: 450px;
+    margin: 0 auto;
+    color: var(--color-gray);
+    font-family: Arial, sans-serif;
+    font-size: 0.9rem;
+    line-height: 1.9;
+}
+
+@media screen and (max-width: 600px) {
+    .authors__hero {
+        padding: 4.5rem 0;
+    }
+
+    .authors__heading h2 {
+        font-size: 1.7rem;
+    }
+
+    .authors__empty {
+        padding: 2.5rem 1.3rem;
+    }
+}

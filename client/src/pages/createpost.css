@@ -1,0 +1,263 @@
+.create-post {
+    min-height: calc(100vh - 5.5rem);
+    padding: 5rem 0;
+    background: var(--color-ivory);
+}
+
+.create-post__container {
+    max-width: 950px;
+}
+
+/* PAGE HEADER */
+
+.create-post__header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.create-post__eyebrow {
+    display: block;
+    color: var(--color-gold-dark);
+    font-family: Arial, sans-serif;
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 1rem;
+}
+
+.create-post__header h1 {
+    font-size: clamp(2rem, 4vw, 3rem);
+    margin-bottom: 1rem;
+}
+
+.create-post__header p {
+    color: var(--color-gray);
+    font-family: Arial, sans-serif;
+    font-size: 0.95rem;
+}
+
+/* FORM CARD */
+
+.create-post__card {
+    padding: 3.5rem;
+    background: var(--color-white);
+    border: 1px solid var(--color-border);
+    border-radius: 5px;
+    box-shadow: 0 15px 45px rgba(23, 36, 58, 0.07);
+}
+
+/* CARD HEADER */
+
+.create-post__card-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 1.8rem;
+    margin-bottom: 2.5rem;
+    border-bottom: 1px solid var(--color-light);
+}
+
+.create-post__card-header span {
+    display: block;
+    color: var(--color-gold-dark);
+    font-family: Arial, sans-serif;
+    font-size: 0.68rem;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    margin-bottom: 0.5rem;
+}
+
+.create-post__card-header h2 {
+    font-size: 1.7rem;
+}
+
+.create-post__card-icon {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--color-primary);
+    color: var(--color-gold);
+    font-size: 1.7rem;
+    border-radius: 4px;
+}
+
+/* FORM FIELDS */
+
+.create-post__field {
+    margin-bottom: 1.8rem;
+}
+
+.create-post__field label {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    color: var(--color-primary);
+    font-family: Arial, sans-serif;
+    font-size: 0.85rem;
+    font-weight: 700;
+    margin-bottom: 0.7rem;
+}
+
+.create-post__field label span {
+    color: var(--color-gray);
+    font-size: 0.62rem;
+    letter-spacing: 1px;
+}
+
+.create-post__field input,
+.create-post__field textarea {
+    width: 100%;
+    padding: 1rem 1.1rem;
+    background: #FAF9F6;
+    border: 1px solid var(--color-border);
+    border-radius: 3px;
+    outline: none;
+    color: var(--color-primary);
+    font-family: Arial, sans-serif;
+    font-size: 0.88rem;
+    transition: var(--transition);
+}
+
+.create-post__field input:focus,
+.create-post__field textarea:focus {
+    background: var(--color-white);
+    border-color: var(--color-gold);
+    box-shadow: 0 0 0 3px rgba(183, 149, 86, 0.10);
+}
+
+.create-post__field input::placeholder,
+.create-post__field textarea::placeholder {
+    color: #AAA49A;
+}
+
+.create-post__field textarea {
+    resize: vertical;
+    line-height: 1.8;
+}
+
+.create-post__field-note {
+    color: var(--color-gray);
+    font-family: Arial, sans-serif;
+    font-size: 0.78rem;
+    margin-bottom: 0.8rem;
+}
+
+.create-post__content {
+    min-height: 320px;
+}
+
+/* DIVIDER */
+
+.create-post__divider {
+    height: 1px;
+    background: var(--color-light);
+    margin: 2.5rem 0;
+}
+
+/* FORM FOOTER */
+
+.create-post__footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5rem;
+    padding-top: 2rem;
+    margin-top: 1rem;
+    border-top: 1px solid var(--color-light);
+}
+
+.create-post__footer p {
+    color: var(--color-gray);
+    font-family: Arial, sans-serif;
+    font-size: 0.65rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.create-post__footer button {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 1.5rem;
+    background: var(--color-primary);
+    border: 1px solid var(--color-primary);
+    border-radius: 3px;
+    color: var(--color-white);
+    font-family: Arial, sans-serif;
+    font-size: 0.85rem;
+    font-weight: 600;
+    transition: var(--transition);
+}
+
+.create-post__footer button span {
+    color: var(--color-gold);
+    transition: var(--transition);
+}
+
+.create-post__footer button:hover {
+    background: var(--color-gold);
+    border-color: var(--color-gold);
+    color: var(--color-primary);
+}
+
+.create-post__footer button:hover span {
+    color: var(--color-primary);
+    transform: translateX(4px);
+}
+
+/* MESSAGE */
+
+.create-post__message {
+    margin-top: 1.5rem;
+    padding: 1rem;
+    background: #F5F0E7;
+    border-left: 3px solid var(--color-gold);
+    color: var(--color-primary);
+    font-family: Arial, sans-serif;
+    font-size: 0.85rem;
+}
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 700px) {
+    .create-post {
+        padding: 3.5rem 0;
+    }
+
+    .create-post__card {
+        padding: 2rem;
+    }
+
+    .create-post__header h1 {
+        font-size: 2.2rem;
+    }
+
+    .create-post__footer {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .create-post__footer button {
+        justify-content: center;
+    }
+
+    .create-post__footer p {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .create-post__card {
+        padding: 1.4rem;
+    }
+
+    .create-post__card-header h2 {
+        font-size: 1.4rem;
+    }
+
+    .create-post__header h1 {
+        font-size: 1.9rem;
+    }
+}

@@ -1,0 +1,105 @@
+.footer {
+    background: var(--color-primary);
+    color: var(--color-white);
+    padding-top: 4.5rem;
+    margin-top: 3rem;
+    border-top: 2px solid var(--color-gold);
+}
+
+.footer__container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 4rem;
+    padding-bottom: 3.5rem;
+}
+
+/* Logo and description */
+
+.footer__logo a {
+    display: inline-block;
+    font-family: Georgia, serif;
+    font-size: 1.7rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: var(--color-white);
+    transition: var(--transition);
+}
+
+.footer__logo a:hover {
+    color: var(--color-gold);
+}
+
+.footer__logo p {
+    max-width: 330px;
+    margin-top: 1rem;
+    font-family: Arial, sans-serif;
+    font-size: 0.9rem;
+    line-height: 1.9;
+    color: #C4C9D0;
+}
+
+/* Quick links */
+
+.footer__links h4 {
+    color: var(--color-gold);
+    font-family: Arial, sans-serif;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-bottom: 1.3rem;
+}
+
+.footer__links ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.footer__links ul li a {
+    font-family: Arial, sans-serif;
+    font-size: 0.88rem;
+    color: #D5D9DF;
+    transition: var(--transition);
+}
+
+.footer__links ul li a:hover {
+    color: var(--color-gold);
+    padding-left: 5px;
+}
+
+/* Copyright */
+
+.footer__copyright {
+    border-top: 1px solid rgba(255, 255, 255, 0.12);
+    padding: 1.5rem 0;
+    text-align: center;
+}
+
+.footer__copyright small {
+    font-family: Arial, sans-serif;
+    font-size: 0.78rem;
+    color: #AEB6C1;
+    letter-spacing: 0.4px;
+}
+
+/* Responsive */
+
+@media screen and (max-width: 600px) {
+    .footer {
+        padding-top: 3.5rem;
+    }
+
+    .footer__container {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+        padding-bottom: 2.5rem;
+    }
+
+    .footer__logo a {
+        font-size: 1.45rem;
+    }
+
+    .footer__copyright {
+        padding: 1.3rem 1rem;
+    }
+}

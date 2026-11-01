@@ -1,0 +1,126 @@
+
+/* ==============================
+   POST CARDS
+============================== */
+
+.post {
+    background: #FFFFFF;
+    border: 1px solid var(--color-border);
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(23, 36, 58, 0.05);
+    transition: var(--transition);
+}
+
+.post:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 15px 35px rgba(23, 36, 58, 0.12);
+}
+
+/* IMAGE AREA */
+
+.post__image {
+    height: 230px;
+    display: flex;
+    align-items: flex-end;
+    padding: 1.2rem;
+    background: linear-gradient(135deg, #17243A, #526985);
+    position: relative;
+    overflow: hidden;
+}
+
+.post__image img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 500ms ease;
+}
+
+.post:hover .post__image img {
+    transform: scale(1.05);
+}
+.post__image span {
+    background: var(--color-gold);
+    color: var(--color-primary);
+    padding: 0.45rem 0.9rem;
+    border-radius: 2px;
+    font-family: Arial, sans-serif;
+    font-size: 0.72rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    position: relative;
+    z-index: 1;
+}
+
+.post__image--two {
+    background: linear-gradient(135deg, #263955, #71869E);
+}
+
+.post__image--three {
+    background: linear-gradient(135deg, #66513A, #B79556);
+}
+
+/* POST CONTENT */
+
+.post__content {
+    padding: 1.7rem;
+}
+
+.post__content h3 {
+    font-size: 1.45rem;
+    font-weight: 700;
+    line-height: 1.4;
+    margin-bottom: 0.9rem;
+    color: var(--color-primary);
+    transition: var(--transition);
+}
+
+.post__content h3:hover {
+    color: var(--color-gold-dark);
+}
+
+.post__content p {
+    font-family: Arial, sans-serif;
+    font-size: 0.9rem;
+    line-height: 1.8;
+    color: var(--color-gray);
+    margin-bottom: 1.5rem;
+}
+
+/* POST FOOTER */
+
+.post__footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.8rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--color-light);
+    font-family: Arial, sans-serif;
+    font-size: 0.78rem;
+    color: var(--color-gray);
+}
+
+.post__footer span {
+    font-weight: 600;
+    color: var(--color-primary);
+}
+
+/* MOBILE */
+
+@media screen and (max-width: 600px) {
+    .post__image {
+        height: 210px;
+    }
+
+    .post__content {
+        padding: 1.3rem;
+    }
+
+    .post__content h3 {
+        font-size: 1.25rem;
+    }
+}

@@ -1,0 +1,139 @@
+
+/* ==============================
+   GLOBAL RESET
+============================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* Colours */
+    --color-primary: #17243A;
+    --color-primary-light: #263955;
+    --color-gold: #B79556;
+    --color-gold-dark: #98763E;
+    --color-white: #FFFFFF;
+    --color-ivory: #F5F0E7;
+    --color-black: #171717;
+    --color-gray: #77736C;
+    --color-light: #EAE4D9;
+    --color-border: #DDD5C8;
+
+    /* Layout */
+    --container-width-lg: 82%;
+    --container-width-md: 90%;
+    --container-width-sm: 94%;
+
+    /* Effects */
+    --transition: all 300ms ease;
+    --shadow: 0 8px 30px rgba(23, 36, 58, 0.08);
+    --radius: 10px;
+}
+
+/* ==============================
+   BASE STYLES
+============================== */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Georgia', serif;
+    line-height: 1.7;
+    background: var(--color-ivory);
+    color: var(--color-black);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+}
+
+button {
+    cursor: pointer;
+    font-family: inherit;
+}
+
+input,
+textarea,
+select {
+    font: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    line-height: 1.2;
+    color: var(--color-primary);
+}
+
+/* ==============================
+   REUSABLE CLASSES
+============================== */
+
+.container {
+    width: var(--container-width-lg);
+    max-width: 1400px;
+    margin-inline: auto;
+}
+
+.section {
+    padding: 5rem 0;
+}
+
+.section__title {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.85rem 1.6rem;
+    background: var(--color-primary);
+    color: var(--color-white);
+    border: 1px solid var(--color-primary);
+    border-radius: 4px;
+    transition: var(--transition);
+}
+
+.btn:hover {
+    background: var(--color-gold);
+    border-color: var(--color-gold);
+    color: var(--color-primary);
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        width: var(--container-width-md);
+    }
+
+    .section {
+        padding: 3.5rem 0;
+    }
+
+    .section__title {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .container {
+        width: var(--container-width-sm);
+    }
+}

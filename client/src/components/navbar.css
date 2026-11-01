@@ -1,0 +1,96 @@
+
+/* ==============================
+   NAVIGATION BAR
+============================== */
+
+.navbar {
+    width: 100%;
+    min-height: 5.5rem;
+    display: flex;
+    align-items: center;
+    background: var(--color-primary);
+    border-bottom: 2px solid var(--color-gold);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar__logo {
+    font-family: Georgia, serif;
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: var(--color-white);
+    letter-spacing: 2px;
+    transition: var(--transition);
+}
+
+.navbar__logo:hover {
+    color: var(--color-gold);
+}
+
+.navbar__menu {
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+}
+
+.navbar__menu a {
+    font-family: Arial, sans-serif;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #EAE4D9;
+    letter-spacing: 0.5px;
+    transition: var(--transition);
+}
+
+.navbar__menu a:hover {
+    color: var(--color-gold);
+}
+
+/* LOGOUT BUTTON */
+
+.navbar__menu button {
+    padding: 0.65rem 1.2rem;
+    background: transparent;
+    color: var(--color-gold);
+    border: 1px solid var(--color-gold);
+    border-radius: 3px;
+    font-size: 0.85rem;
+    transition: var(--transition);
+}
+
+.navbar__menu button:hover {
+    background: var(--color-gold);
+    color: var(--color-primary);
+}
+
+/* MOBILE */
+
+@media screen and (max-width: 600px) {
+    .navbar {
+        min-height: 5rem;
+    }
+
+    .navbar__logo {
+        font-size: 1.2rem;
+    }
+
+    .navbar__menu {
+        gap: 0.8rem;
+    }
+
+    .navbar__menu a {
+        font-size: 0.75rem;
+    }
+
+    .navbar__menu button {
+        padding: 0.5rem 0.7rem;
+        font-size: 0.75rem;
+    }
+}

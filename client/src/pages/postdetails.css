@@ -1,0 +1,341 @@
+
+/* ==============================
+   ARTICLE PAGE
+============================== */
+
+.article-page {
+    min-height: 100vh;
+    padding: 3rem 0 6rem;
+    background: var(--color-ivory);
+}
+
+.article-container {
+    max-width: 1050px;
+}
+
+/* BACK LINK */
+
+.article-back {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.7rem;
+    color: var(--color-gray);
+    font-family: Arial, sans-serif;
+    font-size: 0.85rem;
+    margin-bottom: 3.5rem;
+    transition: var(--transition);
+}
+
+.article-back span {
+    color: var(--color-gold-dark);
+    font-size: 1.2rem;
+}
+
+.article-back:hover {
+    color: var(--color-gold-dark);
+    transform: translateX(-4px);
+}
+
+/* ARTICLE HEADER */
+
+.article-header {
+    max-width: 850px;
+    margin: 0 auto 3rem;
+    text-align: center;
+    animation: articleEntrance 700ms ease both;
+}
+
+.article-category {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background: var(--color-primary);
+    color: var(--color-gold);
+    font-family: Arial, sans-serif;
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 1.7rem;
+}
+
+.article-header h1 {
+    color: var(--color-primary);
+    font-size: clamp(2.5rem, 5vw, 4.2rem);
+    line-height: 1.2;
+    letter-spacing: -1.5px;
+    margin-bottom: 1.5rem;
+}
+
+.article-description {
+    max-width: 700px;
+    margin: 0 auto 2rem;
+    color: var(--color-gray);
+    font-family: Arial, sans-serif;
+    font-size: 1.05rem;
+    line-height: 1.9;
+}
+
+/* ARTICLE METADATA */
+
+.article-meta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    color: var(--color-gray);
+    font-family: Arial, sans-serif;
+    font-size: 0.82rem;
+}
+
+.article-meta strong {
+    color: var(--color-primary);
+}
+
+.article-meta-divider {
+    width: 4px;
+    height: 4px;
+    background: var(--color-gold);
+    border-radius: 50%;
+}
+
+/* FEATURED IMAGE */
+
+.article-image {
+    width: 100%;
+    max-height: 550px;
+    margin-bottom: 4rem;
+    overflow: hidden;
+    border-radius: 5px;
+    box-shadow: var(--shadow);
+}
+
+.article-image img {
+    width: 100%;
+    max-height: 550px;
+    object-fit: cover;
+}
+
+/* ARTICLE BODY */
+
+.article-body {
+    max-width: 760px;
+    margin: 0 auto;
+}
+
+.article-content {
+    color: #393939;
+    font-size: 1.1rem;
+    line-height: 2.1;
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
+}
+
+/* END OF ARTICLE */
+
+.article-end {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin: 4rem 0;
+}
+
+.article-end span:first-child,
+.article-end span:last-child {
+    width: 55px;
+    height: 1px;
+    background: var(--color-border);
+}
+
+.article-end span:nth-child(2) {
+    color: var(--color-gold-dark);
+    font-family: Arial, sans-serif;
+    font-size: 0.65rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+/* AUTHOR INFORMATION */
+
+.article-author {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+    padding: 2rem;
+    background: #FFFFFF;
+    border: 1px solid var(--color-border);
+    border-left: 3px solid var(--color-gold);
+}
+
+.author-avatar {
+    width: 55px;
+    height: 55px;
+    flex-shrink: 0;
+    display: grid;
+    place-items: center;
+    background: var(--color-primary);
+    color: var(--color-gold);
+    border-radius: 50%;
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+.author-label {
+    color: var(--color-gold-dark);
+    font-family: Arial, sans-serif;
+    font-size: 0.65rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.article-author h3 {
+    margin-top: 0.3rem;
+    font-size: 1.2rem;
+}
+
+/* ARTICLE CONTROLS */
+
+.article-controls {
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--color-border);
+}
+
+.article-controls > span {
+    display: block;
+    color: var(--color-gray);
+    font-family: Arial, sans-serif;
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 1.2rem;
+}
+
+.article-buttons {
+    display: flex;
+    gap: 1rem;
+}
+
+.article-edit,
+.article-delete {
+    padding: 0.8rem 1.4rem;
+    border-radius: 3px;
+    font-family: Arial, sans-serif;
+    font-size: 0.85rem;
+    font-weight: 600;
+    transition: var(--transition);
+}
+
+.article-edit {
+    background: var(--color-primary);
+    color: var(--color-white);
+    border: 1px solid var(--color-primary);
+}
+
+.article-edit:hover {
+    background: var(--color-gold);
+    border-color: var(--color-gold);
+    color: var(--color-primary);
+}
+
+.article-delete {
+    background: transparent;
+    color: #A34242;
+    border: 1px solid #A34242;
+}
+
+.article-delete:hover {
+    background: #A34242;
+    color: var(--color-white);
+}
+
+/* LOADING AND ERROR STATES */
+
+.article-message {
+    min-height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    text-align: center;
+}
+
+.article-message h2 {
+    color: var(--color-primary);
+}
+
+.article-message a {
+    color: var(--color-gold-dark);
+}
+
+/* ANIMATION */
+
+@keyframes articleEntrance {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* MOBILE */
+
+@media screen and (max-width: 600px) {
+    .article-page {
+        padding: 2rem 0 4rem;
+    }
+
+    .article-back {
+        margin-bottom: 2.5rem;
+    }
+
+    .article-header {
+        margin-bottom: 2rem;
+    }
+
+    .article-header h1 {
+        font-size: 2.4rem;
+    }
+
+    .article-description {
+        font-size: 0.9rem;
+    }
+
+    .article-meta {
+        flex-wrap: wrap;
+        font-size: 0.75rem;
+    }
+
+    .article-image {
+        margin-bottom: 2.5rem;
+    }
+
+    .article-content {
+        font-size: 1rem;
+        line-height: 1.9;
+    }
+
+    .article-author {
+        padding: 1.3rem;
+    }
+
+    .article-buttons {
+        flex-direction: column;
+    }
+
+    .article-edit,
+    .article-delete {
+        text-align: center;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .article-header {
+        animation: none;
+    }
+}
